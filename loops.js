@@ -4,6 +4,7 @@ console.log(fruitchart);
 //to add a new fruit in list we use push() method
 fruitchart.push('Melon');
 console.log(fruitchart);
+
 //pop() to reduce the last element from the list
 fruitchart.pop();
 console.log(fruitchart);
