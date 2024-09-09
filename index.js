@@ -1,9 +1,11 @@
 #! /usr/bin/env node
-import inquirer from "inquirer";
-let todos = [];
-let condition = true;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var inquirer_1 = require("inquirer");
+var todos = [];
+var condition = true;
 while (condition) {
-    let addtask = await inquirer.prompt([
+    var addtask = await inquirer_1.default.prompt([
         {
             name: "todo",
             type: "input",
@@ -11,7 +13,7 @@ while (condition) {
             default: "Type Your desired todo here",
         },
         { name: "addmore", type: "confirm", message: "Do you want to add more" },
-        //   { name: "", type: "", message: "" },
+        { name: "", type: "", message: "" },
     ]);
     todos.push(addtask.todo);
     condition = addtask.addmore;
